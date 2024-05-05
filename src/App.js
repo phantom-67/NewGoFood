@@ -17,7 +17,7 @@ import Login from './screens/Login';
 import Signup from './screens/Signup.js';
 import MyOrder from './screens/MyOrder.js'
 import { CartProvider } from './components/ContextReducer.js';
-import Cart from './screens/Cart.js'
+// import Cart from './screens/Cart.js'
 import '../node_modules/bootstrap-dark-5/dist/css/bootstrap-dark.min.css';
 import '../node_modules/bootstrap/dist/js/bootstrap.bundle';
 import '../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js';
@@ -26,7 +26,7 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Link
+  // Link
 } from "react-router-dom";
 
 
