@@ -24,7 +24,7 @@
 
 import React, { useState } from 'react'
 import { useCart} from '../components/ContextReducer'
-import { Link, useNavigate, useSearchParams } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Badge from 'react-bootstrap/Badge'
 import Modal from '../Modal';
 import Cart from '../screens/Cart';
