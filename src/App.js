@@ -25,12 +25,12 @@ import '../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js';
 import {
   BrowserRouter as Router,
   Routes,
-  Route,
-  // Link
+  Route
 } from "react-router-dom";
 
 
 function App() {
+
   return (
     <CartProvider>
       <Router>
