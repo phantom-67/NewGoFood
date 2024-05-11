@@ -1,6 +1,5 @@
 {
   "name": "mernapp",
-  "homepage": "https://phantom-67.github.io/GoFood",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
