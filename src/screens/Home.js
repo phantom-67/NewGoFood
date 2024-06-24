@@ -35,7 +35,7 @@ export default function Home() {
 
   const [foodCat, setFoodCat] = useState([]);
   const [foodItem, setFoodItem] = useState([]);
-  const [search,setSearch] = useState('');
+  const [search, setSearch] = useState('');
 
   const loadData = async () => {
     let response = await fetch("http://localhost:4000/api/foodData", {
@@ -62,18 +62,18 @@ export default function Home() {
           <div className="carousel-inner" id="carousal">
             <div className="carousel-caption" style={{ zIndex: "10" }}>
               <div className="d-flex justify-content-center">
-                <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" value={search} onChange={(e)=>setSearch(e.target.value)} />
+                <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" value={search} onChange={(e) => setSearch(e.target.value)} />
                 {/* <button className="btn btn-outline-success text-white bg-success" type="submit">Search</button> */}
               </div>
             </div>
             <div className="carousel-item active">
-              <img src="https://source.unsplash.com/random/300×300/?Burger" className="d-block w-100" style={{ objectFit: "cover",filter: "brightness(30%)" }} alt="..." />
+              <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=3099&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="d-block w-100" style={{ objectFit: "cover", filter: "brightness(30%)" }} alt="Burger" />
             </div>
             <div className="carousel-item">
-              <img src="https://source.unsplash.com/random/300×300/?Pasta" className="d-block w-100" style={{ objectFit: "cover",filter: "brightness(30%)" }} alt="..." />
+              <img src="https://plus.unsplash.com/premium_photo-1664472619078-9db415ebef44?q=80&w=3176&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="d-block w-100" style={{ objectFit: "cover", filter: "brightness(30%)" }} alt="Pasta" />
             </div>
             <div className="carousel-item">
-              <img src="https://source.unsplash.com/random/300×300/?Pastry" className="d-block w-100" style={{ objectFit: "cover",filter: "brightness(30%)" }} alt="..." />
+              <img src="https://images.unsplash.com/photo-1603532648955-039310d9ed75?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGFzdHJ5fGVufDB8fDB8fHww" className="d-block w-100" style={{ objectFit: "cover", filter: "brightness(30%)" }} alt="Pastry" />
             </div>
           </div>
           <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
@@ -91,14 +91,14 @@ export default function Home() {
           foodCat.length !== 0
             ? foodCat.map((data) => {
               return (
-                <div className='row mb-3'>
-                  <div key={data._id} className='fs-3 m-3'>
+                <div className='row mb-3' key={data._id}>
+                  <div className='fs-3 m-3'>
                     {data.CategoryName}
                   </div>
                   <hr />
                   {
                     foodItem.length !== 0
-                    ? foodItem.filter(item => item.CategoryName === data.CategoryName && item.name.toLowerCase().includes(search.toLowerCase()))
+                      ? foodItem.filter(item => item.CategoryName === data.CategoryName && item.name.toLowerCase().includes(search.toLowerCase()))
                         .map(filterItems => {
                           return (
                             <div key={filterItems._id} className='col-12 col-md-6 col-lg-3'>
@@ -118,4 +118,3 @@ export default function Home() {
     </div >
   )
 }
-
