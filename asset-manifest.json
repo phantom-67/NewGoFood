@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/NewGoFood/static/css/main.def6ac4c.css",
+    "main.js": "/NewGoFood/static/js/main.b9759716.js",
+    "static/js/592.9ea14901.chunk.js": "/NewGoFood/static/js/592.9ea14901.chunk.js",
+    "index.html": "/NewGoFood/index.html",
+    "main.def6ac4c.css.map": "/NewGoFood/static/css/main.def6ac4c.css.map",
+    "main.b9759716.js.map": "/NewGoFood/static/js/main.b9759716.js.map",
+    "592.9ea14901.chunk.js.map": "/NewGoFood/static/js/592.9ea14901.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.def6ac4c.css",
+    "static/js/main.b9759716.js"
+  ]
+}
